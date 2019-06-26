@@ -19,7 +19,7 @@ class ball(object):
         pygame.draw.circle(win, (0,0,0), (self.x,self.y), self.radius)
         pygame.draw.circle(win, self.color, (self.x,self.y), self.radius-1)
 
-        
+
     @staticmethod
     def ballPath(startx, starty, power, ang, time):
         print(power)
@@ -32,7 +32,7 @@ class ball(object):
 
         newx = round(distX + startx)
         newy = round(starty - distY)
-        
+
 
         return (newx, newy)
 
@@ -70,8 +70,9 @@ time = 0
 power = 0
 angle = 0
 shoot = False
+clock = pygame.time.Clock()
 while run:
-    
+    clock.tick(30)
     if shoot:
         if golfBall.y < 500 - golfBall.radius:
             time += 0.05
@@ -82,10 +83,10 @@ while run:
             shoot = False
             time = 0
             golfBall.y = 494
-            
+
     line = [(golfBall.x, golfBall.y), pygame.mouse.get_pos()]
     redrawWindow()
-    
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
@@ -99,9 +100,9 @@ while run:
                 power = math.sqrt((line[1][1]-line[0][1])**2 +(line[1][0]-line[0][1])**2)/8
                 angle = findAngle(pos)
                 print(angle)
-            
+
 
 
 pygame.quit()
 quit()
-    
+
