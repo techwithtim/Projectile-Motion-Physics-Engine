@@ -72,7 +72,7 @@ angle = 0
 shoot = False
 clock = pygame.time.Clock()
 while run:
-    clock.tick(30)
+    clock.tick(150)
     if shoot:
         if golfBall.y < 500 - golfBall.radius:
             time += 0.05
@@ -99,7 +99,6 @@ while run:
                 shoot = True
                 power = math.sqrt((line[1][1]-line[0][1])**2 +(line[1][0]-line[0][1])**2)/8
                 angle = findAngle(pos)
-                print(angle)
 
 
 
