@@ -22,7 +22,6 @@ class ball(object):
 
     @staticmethod
     def ballPath(startx, starty, power, ang, time):
-        print(power)
         angle = ang
         velx = math.cos(angle) * power
         vely = math.sin(angle) * power
@@ -72,7 +71,7 @@ angle = 0
 shoot = False
 clock = pygame.time.Clock()
 while run:
-    clock.tick(150)
+    clock.tick(200)
     if shoot:
         if golfBall.y < 500 - golfBall.radius:
             time += 0.05
