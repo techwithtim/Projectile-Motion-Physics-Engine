@@ -15,7 +15,7 @@ Run the file *projectile_motion.py* to start the program.
 
 You can also run Projectile-Motion-Physics-Engine in Gitpod, a free online dev environment for GitHub:
 
-If you're intersted in a paid subscription with GitPod use the coupon code: **TECHWITHTIM2FQBMX**
+If you're intersted in a paid subscription with GitPod use the coupon code: **TECHWITHTIM19**
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/techwithtim/Projectile-Motion-Physics-Engine/blob/master/projectile_motion.py)
 
